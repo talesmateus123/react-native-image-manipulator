@@ -91,8 +91,9 @@ export default class ImageManipulatorSample extends React.Component {
 ```
 
 ## Getting started
+### ⚠ Currently this isn't available in npm registry
 
-`$ npm install react-native-image-manipulator --save`
+`$ yarn add https://github.com/bitlab-code/react-native-image-manipulator`
 
 ### Mostly automatic installation
 
