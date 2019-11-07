@@ -1,12 +1,9 @@
 {
   "name": "react-native-image-manipulator",
-  "version": "1.0.1",
-  "description": "An API to modify images stored in app scope.",
+  "version": "1.0.2",
+  "description": "ImageManipulator for react native without Expo and Unimodules. Based on Expo ImageManipulator",
   "main": "index.js",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Pontus Abrahamsson",
-  "license": ""
+  "author": "BITLAB",
+  "license": "MIT"
 }
