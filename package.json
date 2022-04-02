@@ -4,6 +4,7 @@
   "description": "ImageManipulator for react native without Expo and Unimodules. Based on Expo ImageManipulator",
   "main": "index.js",
   "private": true,
-  "author": "BITLAB",
+  "author": "oguzhnatly",
+  "homepage": "https://github.com/oguzhnatly/react-native-image-manipulator",
   "license": "MIT"
 }
