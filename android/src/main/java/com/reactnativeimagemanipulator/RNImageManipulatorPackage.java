@@ -1,5 +1,5 @@
 
-package com.reactnativeimagemanipulator;
+package com.oguzhnatly.rnimagemanipulator;
 
 import java.util.Arrays;
 import java.util.Collections;

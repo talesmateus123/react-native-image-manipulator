@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Typescript module declarations improved and Pod Errors fixed.
+
 ## 1.0.3
 
 - Errors fixed.

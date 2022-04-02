@@ -1,4 +1,4 @@
-package com.reactnativeimagemanipulator;
+package com.oguzhnatly.rnimagemanipulator;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
