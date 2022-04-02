@@ -1,4 +1,40 @@
-### `ImageManipulator.manipulate(uri, actions, saveOptions)`
+## Getting started
+
+`$ npm install @oguzhnatly/react-native-image-manipulator --save`
+### OR
+`$ yarn add @oguzhnatly/react-native-image-manipulator`
+
+### Mostly automatic installation
+
+`$ react-native link react-native-image-manipulator`
+
+### Manual installation
+
+#### iOS
+
+1.  In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
+2.  Go to `node_modules` ➜ `@oguzhnatly` ➜ `react-native-image-manipulator` and add `RNImageManipulator.xcodeproj`
+3.  In XCode, in the project navigator, select your project. Add `libRNImageManipulator.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
+4.  Run your project (`Cmd+R`)<
+
+#### Android
+
+1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
+
+- Add `import com.reactnativeimagemanipulator.RNImageManipulatorPackage;` to the imports at the top of the file
+- Add `new RNImageManipulatorPackage()` to the list returned by the `getPackages()` method
+
+2.  Append the following lines to `android/settings.gradle`:
+    ```
+    include ':react-native-image-manipulator'
+    project(':react-native-image-manipulator').projectDir = new File(rootProject.projectDir, 	'../node_modules/@oguzhnatly/react-native-image-manipulator/android')
+    ```
+3.  Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+    ```
+      compile project(':react-native-image-manipulator')
+    ```
+
+### `RNImageManipulator.manipulate(uri, actions, saveOptions)`
 
 Manipulate the image provided via `uri`. Available modifications are rotating, flipping (mirroring), resizing and cropping. Each invocation results in a new file. With one invocation you can provide a set of actions to perform over the image. Overwriting the source file would not have an effect in displaying the result as images are cached.
 
@@ -30,7 +66,7 @@ This will first rotate the image 90 degrees clockwise, then flip the rotated ima
 ```javascript
 import React from "react";
 import { Button, TouchableOpacity, Text, View, Image } from "react-native";
-import ImageManipulator from "react-native-image-manipulator";
+import RNImageManipulator from "@oguzhnatly/react-native-image-manipulator";
 
 import Colors from "../constants/Colors";
 
@@ -63,7 +99,7 @@ export default class ImageManipulatorSample extends React.Component {
   }
 
   _rotate90andFlip = async () => {
-    const manipResult = await ImageManipulator.manipulate(
+    const manipResult = await RNImageManipulator.manipulate(
       this.state.image.localUri || this.state.image.uri,
       [{ rotate: 90 }, { flip: { vertical: true } }],
       { format: "png" }
@@ -89,38 +125,3 @@ export default class ImageManipulatorSample extends React.Component {
   };
 }
 ```
-
-## Getting started
-### ⚠ Currently this isn't available in npm registry
-
-`$ yarn add https://github.com/oguzhnatly/react-native-image-manipulator`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-image-manipulator`
-
-### Manual installation
-
-#### iOS
-
-1.  In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2.  Go to `node_modules` ➜ `react-native-image-manipulator` and add `RNImageManipulator.xcodeproj`
-3.  In XCode, in the project navigator, select your project. Add `libRNImageManipulator.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4.  Run your project (`Cmd+R`)<
-
-#### Android
-
-1.  Open up `android/app/src/main/java/[...]/MainActivity.java`
-
-- Add `import com.reactnativeimagemanipulator.RNImageManipulatorPackage;` to the imports at the top of the file
-- Add `new RNImageManipulatorPackage()` to the list returned by the `getPackages()` method
-
-2.  Append the following lines to `android/settings.gradle`:
-    ```
-    include ':react-native-image-manipulator'
-    project(':react-native-image-manipulator').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-image-manipulator/android')
-    ```
-3.  Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-    ```
-      compile project(':react-native-image-manipulator')
-    ```
