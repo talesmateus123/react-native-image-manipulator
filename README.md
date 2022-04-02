@@ -4,9 +4,13 @@
 ### OR
 `$ yarn add @oguzhnatly/react-native-image-manipulator`
 
+### Pod installation
+
+`$ cd ios && pod install`
+
 ### Mostly automatic installation
 
-`$ react-native link react-native-image-manipulator`
+`$ react-native link @oguzhnatly/react-native-image-manipulator`
 
 ### Manual installation
 

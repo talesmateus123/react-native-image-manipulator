@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Errors fixed.
+
 ## 1.0.2
 
 - Typescript module declarations improved.
