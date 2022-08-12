@@ -1,4 +1,4 @@
-package com.oguzhnatly.rnimagemanipulator;
+package com.tabakharniuk.rnimagemanipulator;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;

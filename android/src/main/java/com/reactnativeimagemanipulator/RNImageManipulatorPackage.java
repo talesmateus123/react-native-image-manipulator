@@ -1,5 +1,5 @@
 
-package com.oguzhnatly.rnimagemanipulator;
+package com.tabakharniuk.rnimagemanipulator;
 
 import java.util.Arrays;
 import java.util.Collections;

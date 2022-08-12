@@ -1,10 +1,10 @@
 {
-  "name": "@oguzhnatly/react-native-image-manipulator",
-  "version": "1.0.5",
+  "name": "react-native-image-manipulator",
+  "version": "1.0.6",
   "description": "ImageManipulator for react native without Expo and Unimodules. Based on Expo ImageManipulator",
   "main": "build/index.js",
-  "author": "oguzhnatly",
-  "homepage": "https://github.com/oguzhnatly/react-native-image-manipulator",
+  "author": "tabakharniuk",
+  "homepage": "https://github.com/tabakharniuk/react-native-image-manipulator",
   "license": "MIT",
   "typings": "build/index.d.ts",
   "keywords": [
