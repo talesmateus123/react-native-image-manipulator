@@ -1,3 +1,3 @@
 ## 1.0.6
 
-- Fix uncorrect image orientation on ios
+- Fix incorrect image orientation on ios
